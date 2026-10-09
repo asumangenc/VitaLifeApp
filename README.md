@@ -1,37 +1,105 @@
-VitaLife – AI Destekli Sağlıklı Yaşam ve Mobil Sağlık AsistanıVitaLife, kullanıcıların sağlıklı yaşam alışkanlıklarını optimize etmelerine yardımcı olmak amacıyla geliştirilmiş, üretken yapay zeka entegrasyonuna sahip, oyunlaştırılmış ve tam katmanlı (Full-Stack) bir mobil sağlık asistanı uygulamasıdır.Uygulama; modern Flutter mimarisiyle geliştirilmiş zengin bir ön yüz ile verileri işleyen, Gemini LLM entegrasyonunu yöneten ve güvenli veri yönetimini üstlenen Python Flask backend katmanından oluşur.🚀 Öne Çıkan Özellikler🧠 Gelişmiş Yapay Zeka Entegrasyonu (Generative AI)Gemini AI Destekli Sağlık Danışmanı: Kullanıcının fiziksel verilerine (yaş, boy, kilo, alerjenler) göre kişiselleştirilmiş bağlam sunan akıllı sohbet motoru.Dinamik Prompt Mimarisi: Arka planda kullanıcının güncel metriklerini okuyarak kişiye özel, motive edici ve güvenli yanıtlar üreten servis yapısı.📊 Detaylı Sağlık ve Metrik TakibiBiyometrik Veri Girişi: Boy, kilo, doğum tarihi ve alerjen parametrelerinin dinamik takibi.Vücut Kitle İndeksi (BMI): Kullanıcı verilerine göre otomatik indeksleme ve ideal form takibi.Profil Güncelleme: Dinamik sağlık durumuna göre backend üzerinde anlık güncellenen veri yapısı.🍽️ Akıllı Tarif ve Besin SistemiYöresel ve Sağlıklı Tarifler: Zengin yemek kütüphanesi ve porsiyon başına kalori analizi.Alerjen ve İçerik Filtreleme: Kullanıcının hassasiyetlerine göre alerjen içeren yemekleri otomatik eleyen filtreleme algoritması.🎮 Oyunlaştırma ve Etkileşim (Gamification)Ingredient Mini Game: Sağlıklı ve sağlıksız besin maddelerini ayırt etmeye dayalı, kullanıcı etkileşimini artıran refleks oyunu.Puan ve Kazanım Sistemi: Kullanıcı motivasyonunu artıran dinamik puanlama yapısı.🔐 Kimlik Doğrulama ve Güvenlik (Auth)Güvenli Kimlik Doğrulama: Werkzeug tabanlı tuzlanmış şifreleme (salted password hashing) ile güvenli kayıt ve giriş akışı.İlişkisel Veri Yönetimi: Kullanıcı profilleri ve tercihlerinin MySQL mimarisi üzerinde yönetimi.🛠️ Teknolojik AltyapıKatmanTeknolojiAçıklamaMobil Ön YüzFlutter & DartÇok platformlu, reaktif ve performanslı mobil kullanıcı deneyimiArka Yüz (Backend)Python 3 & FlaskRESTful API mimarisi, uç nokta yönetimi ve veri doğrulamaYapay ZekaGoogle GenAI SDKgemini-2.0-flash tabanlı kişiselleştirilmiş asistan entegrasyonuVeritabanıMySQL / phpMyAdminİlişkisel kullanıcı ve içerik veri tabanı yönetimiGüvenlikWerkzeug SecurityPBKDF2/SHA-256 tabanlı güvenli şifre hashleme protokolü📂 Proje Dizin YapısıPlaintextVitaLifeApp/
+Markdown
+# VITALIFE – AI DESTEKLİ SAĞLIKLI YAŞAM VE MOBİL SAĞLIK ASİSTANI
+
+VitaLife, kullanıcıların sağlıklı yaşam alışkanlıklarını optimize etmelerine yardımcı olmak amacıyla geliştirilmiş, üretken yapay zeka entegrasyonuna sahip, oyunlaştırılmış ve tam katmanlı (Full-Stack) bir mobil sağlık asistanı uygulamasıdır.
+
+Uygulama, modern Flutter mimarisiyle geliştirilmiş bir ön yüz ile verileri işleyen, yapay zeka entegrasyonlarını ve veri yönetimini üstlenen güvenli bir Python backend katmanından oluşur. Kullanıcılar sağlık parametrelerini takip edebilir, Gemini tabanlı yapay zeka ile dinamik olarak sohbet edebilir ve oyunlaştırılmış mekanizmalarla sağlıklı beslenme alışkanlıkları kazanabilirler.
+
+---
+
+## 🚀 ÖNE ÇIKAN ÖZELLİKLER
+
+### 🧠 YAPAY ZEKA ENTEGRASYONU (GENERATIVE AI)
+* **Gemini AI Destekli Chatbot:** Beslenme, diyet, spor ve genel yaşam tarzı sorularını yanıtlayan akıllı asistan.
+* **Kişiselleştirilmiş Sağlık Danışmanlığı:** Kullanıcının boy, kilo, yaş ve alerji verilerine göre özelleştirilmiş, bağlama duyarlı tavsiyeler.
+
+### 📊 SAĞLIK VE METRİK TAKİBİ
+* **Biyometrik Veri Girişi:** Boy, kilo, doğum tarihi ve alerjen parametrelerinin anlık takibi.
+* **Vücut Kitle İndeksi (BMI):** Dinamik BMI hesaplama ve form analizi.
+* **Sağlık Geçmişi Yönetimi:** Kullanıcının geçmiş ve güncel sağlık verilerinin saklanması ve güncellenmesi.
+
+### 🍽️ TARİF VE BESİN YÖNETİM SİSTEMİ
+* **Geniş Tarif Kütüphanesi:** Yöresel ve sağlıklı yemekleri içeren detaylı tarif arşivi.
+* **Besin Değerleri Analizi:** Porsiyon başına kalori ve besin öğesi bilgileri.
+* **Akıllı Alerjen Filtreleme:** Hassasiyeti olan kullanıcılar için alerjen ve içerik bazlı otomatik filtreleme.
+
+### 🎮 OYUNLAŞTIRMA VE ETKİLEŞİM (GAMIFICATION)
+* **Ingredient Mini Game:** Sağlıklı ve sağlıksız besinleri ayırt etmeye dayalı interaktif mini oyun.
+* **Puan ve Görev Mekanizması:** Kullanıcı motivasyonunu artıran dinamik ödül ve puanlama sistemi.
+
+### 🔐 KİMLİK DOĞRULAMA VE KULLANICI GÜVENLİĞİ
+* **Özelleştirilmiş Auth Sistemi:** Güvenli kayıt olma (Register) ve giriş yapma (Login) süreçleri.
+* **Şifrelenmiş Veri Güvenliği:** PBKDF2/SHA-256 tabanlı güvenli şifre hashleme protokolü.
+* **İlişkisel Veri Mimarisi:** Kullanıcı verileri ve tercihlerinin MySQL üzerinde güvenli yönetimi.
+
+---
+
+## 🛠️ TEKNOLOJİK ALTYAPI
+
+| Katman | Teknoloji | Açıklama |
+|---|---|---|
+| **Frontend** | Flutter & Dart | Çok platformlu mobil arayüz geliştirme |
+| **Backend** | Python & Flask | RESTful API mimarisi ve servis yönetimi |
+| **Yapay Zeka** | Google GenAI SDK | `gemini-2.0-flash` model entegrasyonu |
+| **Veritabanı** | MySQL / phpMyAdmin | İlişkisel veri tabanı yönetimi |
+| **Güvenlik** | Werkzeug Security | Tuzlanmış (salted) şifre hashleme |
+
+---
+
+## 📂 PROJE DİZİN YAPISI
+
+```text
+VitaLifeApp/
 ├── backend/
-│   └── app.py                      # Python Flask REST API ve Gemini AI servisleri
+│   └── app.py                      # Flask REST API ve Gemini AI servisleri
 ├── vitalife_app1/                  # Flutter Mobil Uygulama Kök Dizini
-│   ├── android/                    # Android yerel yapılandırmaları
-│   ├── ios/                        # iOS yerel yapılandırmaları
+│   ├── android/                    # Android yerel yapılandırma dosyaları
+│   ├── ios/                        # iOS yerel yapılandırma dosyaları
 │   ├── assets/                     # İkonlar ve görsel varlıklar
 │   └── lib/                        # Dart kaynak kodları
 │       ├── game/
 │       │   └── ingredient_game_screen.dart   # Mini oyun motoru ve arayüzü
 │       ├── screens/
-│       │   ├── ai_chat_screen.dart           # Gemini AI sohbet arayüzü
-│       │   ├── auth_screen.dart              # Giriş / Kayıt ekranı
-│       │   ├── health_input_screen.dart      # Biyometrik veri giriş ekranı
-│       │   └── home_screen.dart              # Ana kontrol paneli
+│       │   ├── ai_chat_screen.dart           # Yapay zeka sohbet ekranı
+│       │   ├── auth_screen.dart              # Giriş ve kayıt ekranı
+│       │   ├── health_input_screen.dart      # Sağlık verisi giriş ekranı
+│       │   └── home_screen.dart              # Ana kontrol paneli (Dashboard)
 │       └── services/
-│           ├── api_service.dart              # REST API haberleşme katmanı
-│           └── gemini_service.dart           # AI entegrasyon servisi
-└── requirements.txt                # Python bağımlılıkları listesi
-💻 Kurulum ve Çalıştırma Rehberi1️⃣ Depoyu KlonlayınBashgit clone https://github.com/asumangenc/VitaLifeApp.git
+│           ├── api_service.dart              # Backend REST API servis entegrasyonu
+│           └── gemini_service.dart           # Gemini AI servis katmanı
+└── requirements.txt                # Python backend kütüphane bağımlılıkları
+💻 KURULUM VE ÇALIŞTIRMA
+1️⃣ REPOYU KLONLAYIN
+Bash
+git clone [https://github.com/asumangenc/VitaLifeApp.git](https://github.com/asumangenc/VitaLifeApp.git)
 cd VitaLifeApp
-2️⃣ Veritabanı Hazırlığı (MySQL)WampServer / XAMPP üzerinde MySQL servisini başlatın.phpMyAdmin arayüzüne girerek vitalife_db adında bir veritabanı oluşturun.users tablonuzu ilgili sütunlarla (first_name, last_name, email, password_hash, height, weight, birth_date, allergens) yapılandırın.3️⃣ Backend Servisini BaşlatınBash# Bağımlılıkları yükleyin
+2️⃣ VERİTABANINI YAPILANDIRIN (MYSQL)
+WampServer veya XAMPP üzerinden MySQL servisini başlatın.
+
+phpMyAdmin panelinde vitalife_db isimli veritabanını açın.
+
+users tablosunu ilgili alanlarla (first_name, last_name, email, password_hash, height, weight, birth_date, allergens) oluşturun.
+
+3️⃣ BACKEND SERVİSİNİ BAŞLATIN
+Bash
+# Gerekli bağımlılıkları yükleyin
 pip install flask flask-cors mysql-connector-python werkzeug google-genai
 
-# Backend dizinine geçin ve sunucuyu başlatın
+# Backend dizinine geçin ve servisi çalıştırın
 cd backend
 python app.py
-Backend servisi varsayılan olarak [http://127.0.0.1:5000](http://127.0.0.1:5000) portunda ayağa kalkacaktır.4️⃣ Flutter Mobil Uygulamasını BaşlatınAyrı bir terminal penceresi açarak:Bashcd vitalife_app1
+4️⃣ FLUTTER UYGULAMASINI BAŞLATIN
+Yeni bir terminal sekmesinde:
+
+Bash
+# Flutter proje dizinine geçin
+cd vitalife_app1
 
 # Paketleri yükleyin
 flutter pub get
 
-# Bağlı cihazları listeleyin
+# Cihazları listeleyin
 flutter devices
 
-# Uygulamayı çalıştırın
+# Uygulamayı başlatın
 flutter run
